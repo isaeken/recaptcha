@@ -1,0 +1,31 @@
+{
+    "name": "isaeken/recaptcha",
+    "description": "Laravel Recaptcha",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "İsa Eken",
+            "email": "hello@isaeken.com.tr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "IsaEken\\Recaptcha\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IsaEken\\Recaptcha\\RecaptchaServiceProvider"
+            ],
+            "aliases": {
+                "Recaptcha": "IsaEken\\Recaptcha\\Facades\\Recaptcha"
+            }
+        }
+    },
+    "require": {
+        "laravel/laravel": "*",
+        "intervention/image": "^2.5"
+    }
+}
